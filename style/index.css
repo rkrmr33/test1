@@ -1,18 +1,24 @@
 body{
-  background: #DCE35B;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000046;
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  
+  background: linear-gradient(to right, #1CB5E0, #000046); 
 
+  margin: 0px;
+  padding: 0px;
   color: White;
   font-family: Segoe UI
 }
 
 .main-div{
-  width: 600;
-  height: 400;
-  position: absolute;
-  left: 100px;
-  top:100px;
+  border: 1px solid black;
+  width: 600px;
+  height: 400px;
+  padding:0px;
+  position:absolute;
+  left:0; right:0;
+  top:0; bottom:0;
+  margin:auto;
+
   text-align: center;
   vertical-align: center;
 }
