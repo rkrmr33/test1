@@ -5,7 +5,7 @@ const url = require('url');
 let win;
 
 function createWindow() {
-    win = new BrowserWindow({width:800, height:600});
+    win = new BrowserWindow({width:800, height:600, show: false});
 
     win.loadURL(url.format({
         protocol: 'file:',
@@ -13,12 +13,19 @@ function createWindow() {
         slashes: true
     }));
 
+    win.setMenu(null);
 
     // close the master BrowserWindow
     win.on('close', () => {
         win = null;
     });
+
+    win.once('ready-to-show', () => {
+      win.show();
+    });
 }
+
+
 
 //call function createWindow
 app.on('ready', createWindow);
