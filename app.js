@@ -5,11 +5,11 @@ const url = require('url');
 let win;
 
 function createWindow() {
-    win = new BrowserWindow({width:800, height:600, show: false});
+    win = new BrowserWindow({width:800, height:600,frame: false, show: false});
 
     win.loadURL(url.format({
         protocol: 'file:',
-        pathname: path.join(__dirname, path.join("windows", "index.html")),
+        pathname: path.join(__dirname, path.join("windows/index", "index.html")),
         slashes: true
     }));
 
