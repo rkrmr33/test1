@@ -1,1 +1,4 @@
-document.write('hello, World!');
+
+function close(){
+    alert('hello');
+}

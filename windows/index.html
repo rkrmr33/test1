@@ -3,9 +3,18 @@
     <head>
         <title></title>
         <link rel="stylesheet" type="text/css" href="../style/index.css" >
-        <script>require('../scripts/index.js')</script>
+        <script>  
+          function close(){
+            alert('hello');
+          }
+      </script>
+        <script src="../scripts/index.js"></script>
     </head>
     <body>
+      
+      <div class="header"> 
+          <button type="button" onclick="close()" id="btClose">Close</button>
+      </div>
       <div class="main-div">
         <h1>Hello, World</h1>
       </div>
