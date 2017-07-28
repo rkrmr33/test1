@@ -2,13 +2,17 @@
 <html>
     <head>
         <title></title>
-        <link rel="stylesheet" type="text/css" href="./style/index.css" >
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css" >
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
         <script src="./scripts/renderer.js"></script>
+        <link rel="stylesheet" type="text/css" href="./style/index.css" >
     </head>
     <body>
       
-      <div class="header"> 
-          <button type="button" onclick="closeWindow()" id="btClose">Close</button>
+      <div class="header">
+        <a href="#" class="closeBT" onclick="closeWindow()" aria-label="close">&times;</a>
+        <div href="#" class="maximizeBT" onclick="maximizeWindow()" ></div>
+        <div href="#" class="minimizeBT" onclick="minimizeWindow()" ></div>
       </div>
       <div class="main-div">
         <h1>Hello, World</h1>

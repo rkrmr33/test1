@@ -2,6 +2,7 @@ body{
   background: #3b3b3d;  
   color: White;
   font-family: Segoe UI;
+  -webkit-user-select: none;
 }
 
 .main-div{
@@ -19,5 +20,44 @@ body{
   width: 100%;  height: 30px;
   padding: 0px; margin: 0px;
   position: absolute; top: 0px; left: 0px;  
+  -webkit-app-region: drag;
+  direction: rtl;
+  line-height: 25px;
   
+}
+
+.header button,div,span,p,img,a {
+  -webkit-app-region: no-drag;
+  margin-right: 10px; padding: 0px;
+  color: #b4b4b4;
+  font-size: 30px;
+  -webkit-transition: all 0.1s ease-in;
+}
+
+.header a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.header div:hover{
+  border-color: white;
+}
+
+.header div{
+  position: absolute;
+  border-radius: 1px;
+  width:14px; height: 14px;
+  
+}
+
+.minimizeBT {
+  right: 53px;
+  top: 8px;
+  border-bottom: 2.5px solid #b4b4b4;
+}
+
+.maximizeBT {
+  right: 28px;
+  top: 8px;
+  border: 2.5px solid #b4b4b4;
 }
